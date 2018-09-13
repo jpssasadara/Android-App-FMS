@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#cde6ec">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/name"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#0d0d0d"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Code :"
+            android:id="@+id/textView7"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#0e197c"
+            android:textStyle="italic"
+            android:layout_weight="0.75"
+            android:background="#e1e9d0" />
+
+        <TextView
+            android:layout_width="217dp"
+            android:layout_height="match_parent"
+            android:id="@+id/code"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/amount"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#0e197c"
+            android:textStyle="italic"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/unit"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rs"
+            android:layout_weight="0.23"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#0e197c"
+            android:textStyle="italic"
+            android:text="Rs-"
+            android:background="#e1e9d0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/price"
+            android:layout_weight="0.36"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:text="Discount :"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#0e197c"
+            android:textStyle="italic"
+            android:id="@+id/textView8"
+            android:layout_weight="0.14"
+            android:background="#e1e9d0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/discount"
+            android:layout_weight="0.44"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="%"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#0e197c"
+            android:textStyle="italic"
+            android:id="@+id/textView10"
+            android:layout_weight="0.31" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:id="@+id/order"
+        android:layout_gravity="right"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_gravity="center_horizontal"
+        android:background="#fbf8f8" />
+
+</LinearLayout>
