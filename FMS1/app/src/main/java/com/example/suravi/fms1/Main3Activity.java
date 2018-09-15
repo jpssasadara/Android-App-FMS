@@ -3,7 +3,9 @@ package com.example.suravi.fms1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -14,7 +16,7 @@ import java.util.ArrayList;
 
 
 public class Main3Activity extends AppCompatActivity {
-
+    Button vieww;
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,18 @@ public class Main3Activity extends AppCompatActivity {
             }
 
         }
+
+        vieww = (Button) findViewById(R.id.view);
+        vieww.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in =new Intent(Main3Activity.this,Main5Activity.class);
+                startActivity(in);
+
+            }
+        });
+
+
     }
 }
 

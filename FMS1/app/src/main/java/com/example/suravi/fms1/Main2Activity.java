@@ -21,7 +21,9 @@ public class Main2Activity extends AppCompatActivity {
     TextView rpw;
     Button submit;
     Button login;
-    String myurlAddData = "http://192.168.43.165/fms1/RegApp.php";
+    //String myurlAddData = "http://192.168.43.165/fms1/RegApp.php";
+    String myurlAddData = "http://192.168.43.165/FmsFarmSide6/Farm-Management-System-IOT/module/fms1/RegApp.php";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

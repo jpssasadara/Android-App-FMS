@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     EditText pw;
     Button login;
     Button register;
-    String url="http://192.168.43.165/fms1/LogApp.php";
-    String url2="http://192.168.43.165/FmsFarmSide2/module/Items/select.php";
+    //String url="http://192.168.43.165/fms1/LogApp.php";
+    String url="http://192.168.43.165/FmsFarmSide6/Farm-Management-System-IOT/module/fms1/LogApp.php";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +90,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, s, Toast.LENGTH_LONG).show();
                 //startActivity(in);
                 MyTaskview2 task = new MyTaskview2();
-                task.execute("http://192.168.43.165/FmsFarmSide2/module/Items/select.php");
+                //task.execute("http://192.168.43.165/FmsFarmSide2/module/Items/select.php");
+                task.execute("http://192.168.43.165/FmsFarmSide6/Farm-Management-System-IOT/module/Items/select.php");
+
             }
             else{
                 Toast.makeText(MainActivity.this, s, Toast.LENGTH_LONG).show();

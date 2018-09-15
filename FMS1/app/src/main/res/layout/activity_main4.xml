@@ -7,7 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.suravi.fms1.Main4Activity">
+    tools:context="com.example.suravi.fms1.Main4Activity"
+    android:background="@drawable/pic3"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,5 +21,184 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:textColor="#211aed" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView6"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="77dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Item Name"
+                    android:id="@+id/textView9"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.60"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_alignTop="@+id/scrollView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Item Code"
+                    android:id="@+id/textView12"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.60"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/code"
+                    android:layout_alignTop="@+id/scrollView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Owner id "
+                    android:id="@+id/textView14"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.60" />
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id"
+                    android:layout_alignTop="@+id/scrollView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:hint="952811282v" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:weightSum="1" >
+
+                <EditText
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_alignTop="@+id/scrollView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Date (Wanted)"
+                    android:layout_weight="0.75"
+                    android:textSize="17dp" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:id="@+id/dat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Quentity"
+                    android:id="@+id/textView13"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.82"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qun"
+                    android:layout_alignTop="@+id/scrollView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:id="@+id/order"
+                android:layout_marginTop="48dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
 </RelativeLayout>

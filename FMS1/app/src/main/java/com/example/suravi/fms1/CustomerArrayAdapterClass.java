@@ -86,8 +86,8 @@ public class CustomerArrayAdapterClass extends BaseAdapter {
             public void onClick(View v) {
                 Intent in = new Intent(con,Main4Activity.class);
 
-                //in.putExtra("key1",tvName.getText());
-                ///in.putExtra("key2",tvPhone.getText());
+                in.putExtra("key1",name.getText());
+                in.putExtra("key2",code.getText());
 
                 con.startActivity(in);
             }
